@@ -229,34 +229,38 @@ sidebar .icons-sideBar {
 
 }
 
+#photoname label:hover {
+    cursor: pointer;
+}
+
 #user-fields {
-    height: 15rem;
-}
-
-#user-fields form {
-    border: 1px solid gray;
-    height: 10rem;
+    height: fit-content;
     width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap;
-
+    display: flex;
+    justify-content: center;
 }
 
-#user-fields input {
-    width: 33%;
-    height: 1.5rem;
-    margin: 1rem auto;
-    font-size: 0.5rem;
+select{
+    height: 2rem;
 }
+
+.form-group {
+    width: 20rem;
+    max-width: 25rem;
+}
+
+.form-group label {
+    margin: 1px 0;
+}
+
 
 .uploadpic {
     border: 1px solid gray;
-    height: 1.4rem;
-    display: flex;
-    align-items: center;
-    margin: 1rem 0.12%;
-    font-size: 0.5rem;
-    position: sticky;
+}
+
+
+.uploadpic:hover{
+    cursor: pointer;
 }
 
 .visao_detalhada {

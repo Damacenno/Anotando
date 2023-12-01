@@ -9,3 +9,5 @@
             $(".calendario").hide(); // Esconde todas as áreas
             $("#" + area_selecionada).show(); // Mostra a área selecionada
         });
+
+    

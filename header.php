@@ -28,7 +28,7 @@
 
     <sidebar>
         <!-- sidebar aqui -->
-        <a href="pfp.php"><img class="icons-sideBar" src="assets/img/icons/perfil.png" alt=""></a>
+        <a href="profilepage.php"><img class="icons-sideBar" src="assets/img/icons/perfil.png" alt=""></a>
         <a href="dashboard.php"><img class="icons-sideBar" src="assets/img/icons/home.png" alt=""></a>
         <a href="#"><img class="icons-sideBar" src="assets/img/icons/config.png" alt=""></a>
         <a href="#"><img class="icons-sideBar" src="assets/img/icons/telefone.png" alt=""></a>

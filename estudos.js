@@ -7,6 +7,10 @@ opcoes_nav_main.click(function () {
 $('#file-upload').bind('change', function () {
     var fileName = '';
     fileName = $(this).val();
-    var final = fileName.replace('C:\\fakepath\\','')
+    var final = fileName.replace('C:\\fakepath\\',': ')
     $('#file-selected').html(final);
 })
+
+function Altera(){
+    console.log("Alterar");
+}

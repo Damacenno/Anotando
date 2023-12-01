@@ -25,7 +25,7 @@ function loginUsuario($conn, $email, $senha)
                     [
                         'usuario_id' => $row['id'],
                         'usuario_nome' => $row['nome'],
-                        'usuario_email' => $row['email'],
+                        'usuario_email' => $row['usuario_email'],
                     ];
                 return true;
             } else {
