@@ -1,0 +1,297 @@
+* {
+    font-family: sans-serif, 'Source Sans 3', sans-serif;
+
+}
+
+body {
+    background-color: #b7b3b3;
+    overflow-y: auto;
+
+}
+
+header {
+    background-color: #023982;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    height: 13vh;
+    color: white;
+    margin-left: max(7%, 65px);
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    width: 95%;
+}
+
+header .logo-anotando img {
+    min-height: 65px;
+    height: 10vh;
+    margin-right: 50px;
+}
+
+header .nome-pagina {
+    margin-left: 10px;
+}
+
+header .nome-pagina h2 {
+    margin-bottom: 0px;
+    font-size: 3rem;
+}
+
+.box {
+    background-color: #E8E8E8;
+    height: 100%;
+    margin-left: 7%;
+    margin-left: max(7%, 65px);
+    display: flex;
+}
+
+sidebar {
+    align-items: center;
+    position: fixed;
+    width: 7%;
+    min-height: 100vh;
+    background-color: #004AAD;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    display: flex;
+    top: 0;
+    align-items: center;
+    flex-direction: column;
+    min-width: 65px;
+
+}
+
+@media(max-width:500px) {
+    header .nome-pagina h2 {
+        font-size: 1rem;
+    }
+
+    header {
+        margin-left: 0px;
+        width: 100%;
+        min-height: 50px;
+        height: 10vh;
+    }
+
+    sidebar {
+        display: none;
+    }
+
+    .box {
+        margin-left: 0px;
+    }
+
+    .main-selected {
+        font-size: 1em !important;
+    }
+
+    .nav-main-option {
+        font-size: 1em !important;
+    }
+
+    .container-main {
+        margin-top: max(50px, 10vh) !important;
+    }
+
+    header .logo-anotando img {
+        height: 100%;
+        min-height: 0px;
+        margin-right: 0px;
+    }
+
+    header .logo-anotando {
+        height: 100%;
+        min-height: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+.openSideBar {
+    width: 250px;
+}
+
+
+sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+sidebar a:hover {
+    color: #404040;
+}
+
+sidebar .icons-sideBar {
+    width: 35px;
+    margin-top: 25px;
+}
+
+.box-option {
+    box-shadow: rgb(69, 69, 69) 7px 7px 7px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box-option:hover {
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+.box-option .img_box_option img {
+    width: 75%;
+}
+
+.box-option a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-main {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #8094ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: max(75px, 13vh);
+    padding: 20px 0px 20px 0px;
+}
+
+.nav-main {
+    width: 95%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-main-option {
+
+    width: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.1em;
+    border-radius: 25px 25px 0px 0px;
+
+}
+
+.main-selected {
+    transition: .1s;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 1.3em;
+
+
+}
+
+.main {
+    width: 95%;
+    height: auto;
+    min-height: 60vh;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#photoname {
+    border: 1px solid gray;
+    padding: 0.5rem;
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#photoname img {
+    background-color: #404040;
+    border-radius: 48%;
+    width: 5rem;
+
+}
+
+#user-fields {
+    height: 15rem;
+}
+
+#user-fields form {
+    border: 1px solid gray;
+    height: 10rem;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+#user-fields input {
+    width: 33%;
+    height: 1.5rem;
+    margin: 1rem auto;
+    font-size: 0.5rem;
+}
+
+.uploadpic {
+    border: 1px solid gray;
+    height: 1.4rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0.12%;
+    font-size: 0.5rem;
+    position: sticky;
+}
+
+.visao_detalhada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_campo_pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.campo_pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.container_campo_pesquisa form {
+    width: 100%;
+    display: flex;
+}
+
+.btn_pesquisa {
+    background-color: #004AAD;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 50px;
+    margin-left: 5px;
+}
