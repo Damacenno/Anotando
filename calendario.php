@@ -56,6 +56,7 @@ require_once "header.php";
                 </div>
             </div>
         </div>
+        <script src="js/calendario.js"></script>
         <script src="js/estudos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
         <script src="./evo-calendar/js/evo-calendar.min.js"></script>

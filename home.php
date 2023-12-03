@@ -27,7 +27,7 @@ require_once "header.php";
                         </a>
                         <div class=" box-option text-center p-3 d-flex ">
                             <div class="img_box_option"><img src="assets/img/icons/gastos.png" alt=""></div>
-                            Financias
+                            Finanças
                         </div>
 
                         <div class="box-option text-center p-3 d-flex ">
