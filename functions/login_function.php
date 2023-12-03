@@ -9,7 +9,7 @@ if (isset($_POST["login_senha"]) && isset($_POST["login_email"])) {
     $login = loginUsuario($conn, $email, $login_senha);
 
     if ($login === true) {
-        header("Location: ../dashboard.php");
+        header("Location: ../home.php");
     } else {
         header("Location:../index.php?login_sucesso=false");
     }

@@ -19,12 +19,12 @@ function loginUsuario($conn, $email, $senha)
 
         if ($result->num_rows >= 1) {
             $row = $result->fetch_assoc();
-            $senha_hash = $row['senha'];
+            $senha_hash = $row['usuario_senha'];
             if (password_verify($senha, $senha_hash)) {
                 $_SESSION["usuario"] =
                     [
-                        'usuario_id' => $row['id'],
-                        'usuario_nome' => $row['nome'],
+                        'usuario_id' => $row['usuario_id'],
+                        'usuario_nome' => $row['usuario_nome'],
                         'usuario_email' => $row['usuario_email'],
                     ];
                 return true;
@@ -62,7 +62,7 @@ function criarUsuario($conn, $nome = null, $email = null, $senha = null)
     }
     // Se o email não existir, prossiga com a criação do usuário
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO usuarios (nome, usuario_email, senha) VALUES (?, ?, ?)";
+    $sql = "INSERT INTO usuarios (usuario_nome, usuario_email, usuario_senha) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sss", $nome, $email, $senhaHash);
 
@@ -97,7 +97,7 @@ function atualizarUsuario($conn, $id, $nome, $email, $numero)
 
 function apagarUsuario($conn, $id)
 {
-    $sql = "DELETE FROM Usuarios WHERE id=?";
+    $sql = "DELETE FROM Usuarios WHERE usuario_id=?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
 

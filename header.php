@@ -18,7 +18,7 @@
     </head>
 
     <header>
-        <div class="nome-pagina">
+        <div class=" nome-pagina">
             <h2>Dashboard</h2>
         </div>
         <div class="logo-anotando">
@@ -28,10 +28,10 @@
 
     <sidebar>
         <!-- sidebar aqui -->
-        <a href="profilepage.php"><img class="icons-sideBar" src="assets/img/icons/perfil.png" alt=""></a>
-        <a href="dashboard.php"><img class="icons-sideBar" src="assets/img/icons/home.png" alt=""></a>
-        <a href="#"><img class="icons-sideBar" src="assets/img/icons/config.png" alt=""></a>
-        <a href="#"><img class="icons-sideBar" src="assets/img/icons/telefone.png" alt=""></a>
+        <a href="perfil.php"><img class="icons-sideBar" src="assets/img/icons/perfil.png" alt="perfil"></a>
+        <a href="home.php"><img class="icons-sideBar" src="assets/img/icons/home.png" alt="home"></a>
+        <a href="#"><img class="icons-sideBar" src="assets/img/icons/config.png" alt="config"></a>
+        <a href="#"><img class="icons-sideBar" src="assets/img/icons/telefone.png" alt="telefone"></a>
     </sidebar>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
