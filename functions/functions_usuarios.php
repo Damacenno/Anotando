@@ -26,6 +26,7 @@ function loginUsuario($conn, $email, $senha)
                         'usuario_id' => $row['usuario_id'],
                         'usuario_nome' => $row['usuario_nome'],
                         'usuario_email' => $row['usuario_email'],
+                        'usuario_genero' => $row['usuario_genero'],
                     ];
                 return true;
             } else {
@@ -79,12 +80,13 @@ function criarUsuario($conn, $nome = null, $email = null, $senha = null)
     }
 }
 
-function atualizarUsuario($conn, $id, $nome, $email, $numero)
+function atualizarUsuario($conn, $id, $nome, $email, $genero,$senha)
 {
+    $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
     // Hash da senha
-    $sql = "UPDATE Usuarios SET usuario_nome=?, usuario_email=?, usuario_numero=? WHERE usuario_id=?";
+    $sql = "UPDATE Usuarios SET usuario_nome=?, usuario_email=?, usuario_senha=?, usuario_genero=? WHERE usuario_id=?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssi", $nome, $email, $numero, $id);
+    $stmt->bind_param("ssssi", $nome, $email,$senhaHash,$genero, $id);
     if ($stmt->execute()) {
         $stmt->close();
         return true; // Sucesso ao atualizar o usuário
