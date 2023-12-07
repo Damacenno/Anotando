@@ -50,7 +50,8 @@ button:focus {
 .calendar-sidebar {
     position: absolute;
     margin-top: 0;
-    width: 200px;
+    width: 20%;
+    max-width: 270px;
     height: 100%;
     float: left;
     background-color: #004AAD;
@@ -173,8 +174,8 @@ button:focus {
     padding: 40px 30px;
     float: left;
     width: 100%;
-    max-width: calc(100% - 600px);
-    margin-left: 200px;
+    max-width: calc(100% - 550px);
+    margin-left: 220px;
     background-color: #fff;
     -webkit-box-shadow: 5px 0 18px -3px rgba(0, 0, 0, .15);
     box-shadow: 5px 0 18px -3px rgba(0, 0, 0, .15);
@@ -304,7 +305,7 @@ tr.calendar-body .calendar-day .day[disabled] {
     position: absolute;
     top: 0;
     right: 0;
-    width: 400px;
+    width: 340px;
     height: 100%;
     padding: 70px 30px 60px 30px;
     background-color: #fbfbfb;
@@ -582,12 +583,12 @@ button.icon-button>span.chevron-arrow-right {
 
     tr.calendar-header .calendar-header-day,
     tr.calendar-body .calendar-day {
-        padding: 10px 5px
+        padding: 8px 2px;
     }
 
     .calendar-events {
         width: 380px;
-        padding: 70px 20px 60px 20px
+        padding: 70px 10px 60px 40px;
     }
 }
 

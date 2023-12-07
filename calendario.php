@@ -28,7 +28,7 @@ require_once "header.php";
                 </div>
                 <div class="main">
                     <div>
-                        <div class="calendario" id="calendario">
+                        <div class="calendario areas" id="calendario">
                             <div class="console-log">
                                 <div class="log-content">
                                     <div class="--noshadow" id="demoEvoCalendar"></div>
@@ -39,16 +39,31 @@ require_once "header.php";
                                 <button class="btn-action" id="removeBtn" disabled>REMOVE EVENT</button>
                             </div>
                         </div>
-                        <div class="visao_detalhada" id="visao_detalhada">
+                        <div class="visao_detalhada areas" id="visao_detalhada">
 
                             <div class="container_campo_pesquisa">
-                                <form action="filtro">
+                                <form action="">
                                     <input type="text" class="campo_pesquisa" id="txtBusca" placeholder="Buscar..." />
-                                    <input type="submit" value="" class="btn_pesquisa">
+                                    <button type="submit" class="btn_pesquisa">
+                                        <img src="assets/img/icons/lupa.png" alt="lupa">
+                                    </button>
                                 </form>
-                            </div>
-                            <div class="content_visao_detalhada">
 
+                            </div>
+                            <div class="visao_detalhada_content">
+                                <div class="card_evento_container">
+                                    <div class="card_evento_content">
+                                        <span> 27 de Novembro - Festa Anotando 1 ano</span>
+                                        <div class="evento_nivel_importancia_container">
+                                            <div class="evento_nivel_importancia"></div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="card_evento_detalhes">
+                                    <span> 27 de Novembro - Festa Anotando 1 ano</span>
+                                </div>
                             </div>
 
                         </div>

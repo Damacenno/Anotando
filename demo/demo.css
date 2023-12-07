@@ -1,3 +1,12 @@
+:root {
+	--cor-0: #FFFFFF;
+	--cor-1: #b7b3b3;
+	--cor-2: #7396D5;
+	--cor-3: #004AAD;
+	--cor-4: #023982;
+	--cor-5: #000000;
+}
+
 section .section-content {
 	position: relative;
 	margin-bottom: 50px;
@@ -106,7 +115,7 @@ section .section-note>a:hover {
 
 button.btn-action {
 	font-family: 'Fira Mono', monospace;
-	color: #755eb5;
+	color: var(--cor-4);
 	border: none;
 	background-color: #fff;
 	border-radius: 8px;

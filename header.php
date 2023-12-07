@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Anotando</title>
-
         <link rel="icon" type="image/x-icon" href="assets/img/logos/favcon - lapis (2).png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,11 +14,17 @@
             rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
 
-
-
     </head>
 
     <header>
+        <div class="line_burguer"><img src="assets/img/icons/line_buguer.png" alt=""></div>
+        <div class="toggle">
+            <a href="#" id="burguer" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                <span></span>
+            </a>
+        </div>
+
+
         <div class=" nome-pagina">
             <h2>Dashboard</h2>
         </div>
